@@ -52,3 +52,12 @@ if (number1 === null || number2 === 20) {
     "Q3: second argument isn't true but first one is, so this code will be executed"
   );
 }
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Q4:
+//Yes!, using the unary operator(+) is the fastest way to convert string to a number,
+// on the other hand, we can use parseInt() method but with unary operator it's twice as simple.
+const string = "4";
+const number = +string;
+console.log(
+  `Q4: indeed it is! ---> before converting: variable: ${string} type: ${typeof string} after converting: variable: ${number} type: ${typeof number}`
+);
