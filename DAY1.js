@@ -40,3 +40,15 @@ if (num1 === 1 && num2 === 2) {
 } else {
   console.log("this won't pring");
 }
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Q3:
+//the ||(or) operator is also used in if blocks like &&(and operator), and it will execute
+//code in the body of if statement, if one of the statements is true:
+
+const number1 = null;
+const number2 = undefined;
+
+if (number1 === null || number2 === 20) {
+  console.log(
+    "Q3: second argument isn't true but first one is, so this code will be executed"
+  );
+}
