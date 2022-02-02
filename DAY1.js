@@ -5,7 +5,7 @@
 //3. What does the || operator do?
 //4. is using the + or unary plus operator the fastest way in converting a string to a number?
 
-//1:
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Q1:
 // Simply put, Undefined is type itself which occurs when
 //variable was declaired but never asigned to any value:
 let variable;
@@ -25,3 +25,18 @@ let variableNull = null;
 //undefined-ის დროს ცვლადს არ გააჩნია მნიშვნელობა, და undefined წარმოადგენს ტაიპს
 //null-ის დროს ცვლადს მინიჭებული აქვს მნიშვნელობა თუმცა ეს მნიშვნელობა ცარიელია, null არის
 //ობიექტი.
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Q2:
+//the && operator is used in if statements and means if both statements are true then execute
+//code in the body of if:
+
+const num1 = 1;
+const num2 = 2;
+
+if (num1 === 1 && num2 === 2) {
+  console.log(
+    "Q2: this string will be printed after executing this because both statements are true"
+  );
+} else {
+  console.log("this won't pring");
+}
