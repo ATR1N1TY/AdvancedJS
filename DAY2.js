@@ -18,3 +18,17 @@
 //with DOM we can add remove and change insides of an HTML element with JS code
 
 // tags in html is also called nodes
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Q6 Q7 Q8:
+
+//Event propagation is the way how the event capturing flows
+
+//when we have nested tags in HTML document by default if we click on the inner most element
+// events will flow up(bubble up) also called bubbling, to the body > html > document
+
+//what if we don't want to bubble events?
+// we can simply prevent event bubbling by typing e.stopPropagation()
+
+//Event capturing is when we click somehting on a webpage this means event was captured
+//Event can be anythin: keyUp, keyDown, click, etc.
+//when Event is detected on a webpage by EventListener, this means event was captured
