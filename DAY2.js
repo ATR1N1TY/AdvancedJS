@@ -38,3 +38,12 @@
 //if we click that element, sequence of events will occur from child to parent(will bubble up)
 //that's becouse this elements are nested and if we click on last child, we have also clicked
 // on parent element of that child and so on
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Q8:
+
+//Event capturing is the same thing as event bubbling but it flows the other way;
+// from parent to child
+
+//imagine beast is standing on top of HTML doc, and suddenly he felt smell of something tasty
+//and knows from where that smell is coming from
+// beast will start running to that smell and will capture it's food and eat
