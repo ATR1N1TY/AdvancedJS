@@ -15,3 +15,12 @@
 
 //one might say that both page refresh, bubbling are default behavour of a browser
 //but there are cases when we want bubbling to happen but prevent other behavours, or vice-verca
+
+//10.
+
+//it's quite easy, we should check defaultPrevented property of an event object, if it's value is true ut means
+//prevent default was used, otherwise it's not been used
+
+document.addEventListener("touchmove", function (e) {
+  console.log(e); // <--- in this object
+});
