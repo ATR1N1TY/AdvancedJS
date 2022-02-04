@@ -24,3 +24,8 @@
 document.addEventListener("touchmove", function (e) {
   console.log(e); // <--- in this object
 });
+
+//11.this one is easy one too!, if it throws an error when we want to access value of an x,
+//which is a property of a someprop, it means that someprop is undefined
+
+//which means it doesn't exist, so how can something which doesn't exist have an x property?
