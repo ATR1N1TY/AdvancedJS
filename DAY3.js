@@ -29,3 +29,8 @@ document.addEventListener("touchmove", function (e) {
 //which is a property of a someprop, it means that someprop is undefined
 
 //which means it doesn't exist, so how can something which doesn't exist have an x property?
+
+//12.
+
+//simply put, target is a property of an event object, which is a object itself, and contains detailed information
+//about element where the event have been occured
