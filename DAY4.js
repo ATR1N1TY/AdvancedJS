@@ -41,3 +41,53 @@ if (1 === "1") {
 
 //Mostly we use ===(tripple equals), becouse most of the time we don't want to convert anything
 //but there are some cases when ==(double equals) is usefull too!
+
+//15.
+
+//Well, it has quite interesting answer I think!
+
+//bassically, we have primitive and object types in javascript
+//primitive types are compared by their value for example:
+
+//becouse both a & b are primitive types they will be compared to each other by their value
+//and they both have same value
+let a = "stringer";
+let b = "stringer";
+
+//so this will log true
+if (a === b) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+///////////////////////
+//but javascript treats objects differently, it doesn't compare each other by their value
+//but it compares by their address in memory where the variable is stored
+let obj1 = {
+  first: 1,
+  second: 2,
+  third: 3,
+  fourth: 4,
+};
+
+let obj2 = {
+  first: 1,
+  second: 2,
+  third: 3,
+  fourth: 4,
+};
+
+//becouse obj1 & obj2 have different address in RAM, this will log false as they are in different
+//locations
+if (obj1 === obj2) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
+//also in JS arrays are objects too and becouse of that code bellow will also log false
+if ([] === []) {
+  console.log(true);
+} else {
+  console.log(false);
+}
