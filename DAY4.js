@@ -91,3 +91,17 @@ if ([] === []) {
 } else {
   console.log(false);
 }
+
+//16.
+
+//the !!(double not), is the easy way to convert any type into boolean
+
+//we simply write !! in front of any value an it coerces!:
+
+console.log(!!undefined); //false
+console.log(!!0); //false
+console.log(!!1); //true
+console.log(!!NaN); //false
+console.log(!!""); //false
+console.log(!![]); //true
+console.log(!!{}); //true
