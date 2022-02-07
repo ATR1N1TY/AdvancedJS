@@ -13,3 +13,43 @@ let x = 5;
 x = (x++, x / 2, x * 10, (x = x * 3), (x = x + (324 * x) / 2));
 
 console.log(x);
+
+//18.
+
+//19.
+
+//When we talk about scopes in js, we talk about where can we declare and
+//access variables in the code
+
+//there are three types of scopes in javascript: Global, Function and block scopes
+
+//if we aren't declaring variable in the function it means that variable is accesable anywhere:
+
+//Global Scope:
+let variableName =
+  "this is a global variable so every function, class, block can access it!";
+
+//Function Scope:
+//function scope means variable is declared inside function body so only this function or it's
+//child functions or blocks can access it:
+
+const funcScope = () => {
+  let variable =
+    "this variable can only be accessed inside the funcScope function";
+  const innerFunct = () => {
+    console.log(variable); // this will log variable as it's accesable
+    let notConst = "something";
+  };
+  console.log(notConst); // this will throw an error becouse innerFuncs variable
+  // 'notConst' isn't accesable for funcScope function
+};
+
+//Block Scope:
+if (1 === 1) {
+  let blockVar = ["rame"];
+}
+console.log(blockVar); // this will throw an error because blockVar doesn't exist in the global
+//Scope and it's only accesable inside the if statement body
+
+//Bassically, scoping is an important concept which tells us about, how declaring variables work
+//in JavaScript!.
