@@ -16,6 +16,29 @@ console.log(x);
 
 //18.
 
+//Hoisting is a pretty interensting thing and also interviewers love to ask what's hoisting
+
+//Bassicaly, variables and functions are hoisted to the top in order to run properly
+//for example:
+thisFunctWorks();
+
+function thisFunctionWorls() {
+  console.log("somethin");
+}
+
+//question is... how function can be invoked when it's not declared like in this example
+//the answer is that, function is hoisted so it becomes:
+
+function thisFunctionWorls() {
+  console.log("somethin");
+}
+
+thisFunctWorks();
+
+//but it's important to mention that when hoisted, it doesn't mean functions are moved physically
+//but JS compiler firstly goes to function declarations and variables and stores that into RAM
+//or in a memory , then the executon phase begins.
+
 //19.
 
 //When we talk about scopes in js, we talk about where can we declare and
