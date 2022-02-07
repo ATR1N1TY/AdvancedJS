@@ -76,3 +76,5 @@ console.log(blockVar); // this will throw an error because blockVar doesn't exis
 
 //Bassically, scoping is an important concept which tells us about, how declaring variables work
 //in JavaScript!.
+
+//20.
